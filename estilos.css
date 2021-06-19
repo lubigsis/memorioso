@@ -6,9 +6,9 @@
     background: #ffe5e2;
 }
 
-.contenedor-grilla{
+.contenedor-texto{
     margin: auto;
-    margin-top: 60px;
+    margin-top: 20px;
     padding: 10px;
     width: calc(100% -20px);
     max-width: 680px;
@@ -16,17 +16,170 @@
 
 .text{
     width: 100%;
-    color: #907fa4;
+    color: #9441f3;
     text-align: center;
     font-size: 30px;
 }
 
 .s1{
-    margin-top: 10px;
+    margin-top: 8px;
     font-size: 17px;
 }
 
 .s2{
-    margin:10px 0;
+    margin: 2px 0;
     font-size: 17px;
+}
+
+/*............................................Imagenes.........................*/
+
+.contenedor-cards{
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards-wrap{
+    margin: 7px;
+    perspective: 800;
+}
+
+.card{
+    width: 80px;
+    height: 90px;
+    background: #ff1aff;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .7s ease;
+    box-shadow: 0px 10px 15px -5px rgb(0,0,0,0.65);
+
+}
+.front, .back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+
+.back{
+    transform: rotateY(180deg);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(235, 13, 13);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cards-wrap:hover .card{
+    transform: rotateY(180deg);
+    
+}
+
+.front{
+    width: 100%;
+    height: 90px;
+    background-image: url(backCard.png);
+    background-size: contain;
+    object-fit: cover;
+    background-position: center;
+   
+}
+
+.c1{
+    width: 100%;
+    background-image: url(poke1.png);
+    background-size: contain;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.c2{
+    width: 100%;
+    background-image: url(poke2.png);
+    background-size: contain;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.c3{
+    width: 100%;
+    background-image: url(poke3.png);
+    background-size: contain;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.c4{
+    width: 100%;
+    background-image: url(poke4.png);
+    background-size: contain;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.c5{
+    width: 100%;
+    background-image: url(poke5.png);
+    background-size: contain;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.c6{
+    width: 100%;
+    background-image: url(poke6.png);
+    background-size: contain;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.c7{
+    width: 100%;
+    background-image: url(poke7.png);
+    background-size: contain;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.c8{
+    width: 100%;
+    background-image: url(poke8.png);
+    background-size: contain;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.c9{
+    width: 100%;
+    background-image: url(poke9.png);
+    background-size: contain;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.c10{
+    width: 100%;
+    background-image: url(poke10.png);
+    background-size: contain;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
